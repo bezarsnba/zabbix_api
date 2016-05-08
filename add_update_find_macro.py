@@ -8,7 +8,7 @@ zapi = ZabbixAPI(ZABBIX_SERVER)
 #AUTH
 zapi.login('Admin','zabbix')
 
-ArqHost = open("C:\Users\p734790\Documents\Programas\dir.txt", 'r').read().split('\n')
+ArqHost = open("C:\dir.txt", 'r').read().split('\n')
 
 '''
     File dir.txt contain the parameters
