@@ -7,7 +7,7 @@
 
 from zabbixAPI import zapi
 from sys import argv
-
+auth = zapi( '', 'user.login', '' )
 
 statusAction=argv[1]
 
