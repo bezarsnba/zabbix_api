@@ -44,3 +44,4 @@ def criaTrigger():
             expression='{Zabbix server:script.sh[Function,{HOST.IP},{HOST.NAME},000].str("ERROR")}=1' % zItemHost[2]
             )
 
+criaItem()
