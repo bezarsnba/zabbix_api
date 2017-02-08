@@ -16,13 +16,11 @@ ArqHost = open("C:\criaritem.txt", 'r').read().split('\n')
 
 def criaItem():
     for linha in ArqHost:
-        #zItemHost = linha.split('')
-        zSistemaItem = linha.split(',')
-       
-        if linha:
+        zSm = linha.split(',')
+    if linha:
             item=zapi.item.create(
             hostid = "10000",
-            name = "Name item %s" % zSistemaItem[2],
+            name = "Name item %s" % zSm[2],
             key_= linha,
             type = 10,
             interfaceid = 615,
